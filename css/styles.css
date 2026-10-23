@@ -101,11 +101,12 @@ section[id] { scroll-margin-top: var(--header-h); }
 .logo {
   display: flex;
   align-items: center;
-  gap: var(--space-sm);
+  gap: 11px;
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 1.25rem;
-  color: var(--color-primary);
+  font-size: 1.3rem;
+  letter-spacing: -0.02em;
+  color: var(--color-primary-dark);
 }
 
 /* ---------- Buttons ---------- */
@@ -434,7 +435,7 @@ section[id] { scroll-margin-top: var(--header-h); }
 /* ---------- Footer ---------- */
 .footer { background: var(--color-primary-dark); color: var(--color-bg); padding: var(--space-xl) 0 var(--space-lg); }
 .footer__inner { display: flex; flex-direction: column; align-items: center; gap: var(--space-md); text-align: center; }
-.logo--footer { display: flex; align-items: center; gap: var(--space-sm); font-family: var(--font-heading); font-weight: 700; font-size: 1.1rem; }
+.logo--footer { display: flex; align-items: center; gap: var(--space-sm); font-family: var(--font-heading); font-weight: 700; font-size: 1.1rem; color: var(--color-bg); }
 .footer__tagline { max-width: 50ch; opacity: 0.85; }
 .footer__links { display: flex; gap: var(--space-lg); flex-wrap: wrap; justify-content: center; }
 .footer__copy { opacity: 0.6; font-size: 0.85rem; margin-top: var(--space-md); }

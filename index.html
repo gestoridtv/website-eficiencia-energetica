@@ -9,15 +9,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
 </head>
 <body>
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="#inicio" class="logo" aria-label="Climatek — inicio">
-        <svg width="34" height="34" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M18 3 L33 15 V31 H3 V15 Z" fill="#1B4332"/>
-          <path d="M18 3 L33 15 H3 Z" fill="#E07A3E"/>
-          <rect x="14" y="19" width="8" height="12" fill="#F7F5F0"/>
+        <svg width="36" height="36" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="climatekMarkHeader" x1="4" y1="2" x2="36" y2="38" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#1B4332"/>
+              <stop offset="1" stop-color="#0F2A1E"/>
+            </linearGradient>
+          </defs>
+          <rect width="40" height="40" rx="11" fill="url(#climatekMarkHeader)"/>
+          <path d="M9 23 L20 12 L31 23" stroke="#F7F5F0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <path d="M12 27 H28" stroke="#F7F5F0" stroke-width="2.6" stroke-linecap="round" opacity="0.85"/>
+          <circle cx="29" cy="10" r="3.6" fill="#E07A3E"/>
         </svg>
         <span>Climatek</span>
       </a>
@@ -284,10 +292,10 @@
   <footer class="footer" id="footer">
     <div class="container footer__inner">
       <div class="logo logo--footer">
-        <svg width="28" height="28" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M18 3 L33 15 V31 H3 V15 Z" fill="#D8E6DD"/>
-          <path d="M18 3 L33 15 H3 Z" fill="#E07A3E"/>
-          <rect x="14" y="19" width="8" height="12" fill="#1B4332"/>
+        <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 23 L20 12 L31 23" stroke="#D8E6DD" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <path d="M12 27 H28" stroke="#D8E6DD" stroke-width="2.6" stroke-linecap="round" opacity="0.85"/>
+          <circle cx="29" cy="10" r="3.6" fill="#E07A3E"/>
         </svg>
         <span>Climatek</span>
       </div>
