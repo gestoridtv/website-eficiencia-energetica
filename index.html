@@ -207,10 +207,86 @@
         </ol>
       </div>
     </section>
-    <section id="estadisticas" class="stats"></section>
-    <section id="contacto" class="contact"></section>
+    <section id="estadisticas" class="stats">
+      <div class="container stats__grid">
+        <div class="stat">
+          <span class="stat-number" data-target="180">0</span><span class="stat-suffix">+</span>
+          <p>Proyectos realizados</p>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="35">0</span><span class="stat-suffix">%</span>
+          <p>Ahorro energético promedio</p>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="12">0</span><span class="stat-suffix">+</span>
+          <p>Años de experiencia</p>
+        </div>
+      </div>
+    </section>
+    <section id="contacto" class="contact">
+      <div class="container contact__inner">
+        <div class="contact__info reveal">
+          <h2 class="section-title" style="text-align:left">Hablemos de su proyecto</h2>
+          <p>Cuéntenos sobre su vivienda o terreno y le respondemos con los próximos pasos.</p>
+          <ul class="contact__details">
+            <li>contacto@climatek.com.ar</li>
+            <li>+54 11 5555-0123</li>
+            <li>Buenos Aires, Argentina</li>
+          </ul>
+        </div>
+
+        <form id="contactForm" class="contact-form reveal" novalidate>
+          <div class="form-field">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required>
+            <span class="form-error" data-for="name"></span>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <span class="form-error" data-for="email"></span>
+          </div>
+          <div class="form-field">
+            <label for="service">Servicio de interés</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Seleccionar...</option>
+              <option value="bioclimatico">Diseño de vivienda bioclimática</option>
+              <option value="energetico">Análisis energético del hogar</option>
+              <option value="iot">Análisis para instalación de IoT</option>
+            </select>
+            <span class="form-error" data-for="service"></span>
+          </div>
+          <div class="form-field">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <span class="form-error" data-for="message"></span>
+          </div>
+          <button type="submit" class="btn btn--accent">Enviar consulta</button>
+          <p class="form-success" hidden>¡Gracias! Recibimos su consulta y le responderemos a la brevedad.</p>
+        </form>
+      </div>
+    </section>
   </main>
-  <footer class="footer" id="footer"></footer>
+  <footer class="footer" id="footer">
+    <div class="container footer__inner">
+      <div class="logo logo--footer">
+        <svg width="28" height="28" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 3 L33 15 V31 H3 V15 Z" fill="#D8E6DD"/>
+          <path d="M18 3 L33 15 H3 Z" fill="#E07A3E"/>
+          <rect x="14" y="19" width="8" height="12" fill="#1B4332"/>
+        </svg>
+        <span>Climatek</span>
+      </div>
+      <p class="footer__tagline">Construcción bioclimática, eficiencia energética e IoT para el hogar.</p>
+      <nav class="footer__links">
+        <a href="#servicios">Servicios</a>
+        <a href="#beneficios">Por qué elegirnos</a>
+        <a href="#proceso">Cómo trabajamos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <p class="footer__copy">© 2026 Climatek. Todos los derechos reservados.</p>
+    </div>
+  </footer>
   <script src="js/script.js"></script>
 </body>
 </html>
